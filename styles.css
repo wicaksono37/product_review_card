@@ -1,0 +1,138 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* card_section */
+.card {
+    border-radius: 10px;
+    display: flex;
+    max-width: 666px;
+    background-color: white;
+    margin: 0 rem;
+}
+/* card section */
+
+/* img section */
+.product_image {
+    width: 50%;
+}
+
+.product_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/* img section */
+
+/* desc section */
+.details {
+    width: 50%;
+    padding: 2rem;
+}
+
+.details .montserrat {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.75rem;
+}
+
+.details .name {
+    color: hsl(212, 21%, 14%);
+    padding-right: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+.details .description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.75rem;
+}
+
+.price_containers {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+    align-items: center;
+}
+
+.price_containers .current_price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.price_containers .old_price {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+button {
+    width: 100%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: 0;
+    outline: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.attribution {
+    display: block;
+}
+@media only screen and (max-width: 550px) {
+    .card {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .product_image {
+        width: 100%;
+        height: 40%;
+    }
+
+    .product_image img {
+        content: url(./images/image-product-desktop.jpg);
+    }
+
+    .details {
+        width: 100%;
+    }
+
+    .details .name {
+        padding-right: 0;
+    }
+
+
+}
+
+/* desc section */
